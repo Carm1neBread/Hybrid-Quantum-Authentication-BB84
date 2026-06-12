@@ -59,10 +59,11 @@ To mathematically prove the protocol's robustness, an adversary (**Eve**) was in
    ```
 4. Open and run the Jupyter Notebook located in `/src/`.
 
-   _The notebook is completely self-contained. The first cell will automatically handle the installation of all required dependencies, including fixing C-API version conflicts._
+   _The first cell of the notebook automatically handles the installation of all required dependencies (including fixing C-API version conflicts with `numpy<2.0.0`)._
 
-   **Note for External Users:**
+   **Note for External/Local Users:**
    
    The Jupyter Notebook is configured with an interactive fallback. If you run it locally or on Google Colab, a prompt will securely ask for your free `netsquid.org` credentials to install the required network simulator.
+Additionally, a `requirements.txt` file is provided in the repository if you prefer to set up your Python virtual environment manually in a local IDE.
 
    
