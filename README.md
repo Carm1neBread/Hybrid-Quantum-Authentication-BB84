@@ -57,13 +57,12 @@ To mathematically prove the protocol's robustness, an adversary (**Eve**) was in
    git clone https://github.com/Carm1neBread/Quantum-Secure-Communication-QPUF-QKD.git
    cd Quantum-Secure-Communication-QPUF-QKD
    ```
-2. Due to the specific C-API requirements of NetSquid in cloud environments, install the dependencies strictly using:
-   ```bash
-   pip install "numpy<2.0.0" "scipy<1.13.0"
-   pip install qiskit qiskit-aer matplotlib pylatexenc
-   ```
-3. Install NetSquid using your personal credentials:
-   ```bash
-   pip install netsquid --extra-index-url https://YOUR_NETSQUID_USER:YOUR_NETSQUID_PWD@pypi.netsquid.org
-   ```
-4. Run the Jupyter Notebook in `/src/`.
+4. Open and run the Jupyter Notebook located in `/src/`.
+
+   _The notebook is completely self-contained. The first cell will automatically handle the installation of all required dependencies, including fixing C-API version conflicts._
+
+   **Note for External Users:**
+   
+   The Jupyter Notebook is configured with an interactive fallback. If you run it locally or on Google Colab, a prompt will securely ask for your free `netsquid.org` credentials to install the required network simulator.
+
+   
